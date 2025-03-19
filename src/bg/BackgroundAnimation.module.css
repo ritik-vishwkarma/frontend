@@ -1,0 +1,71 @@
+/* Animated Background */
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #ddb937, #e823c7, #cf2471, #8a18adfa, #18239b);
+  background-size: 400% 400%;
+  animation: gradientBG 6s ease-in-out infinite alternate;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Twinkling Stars */
+.starContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -15;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 2s infinite alternate ease-in-out;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* Floating Instagram Icons */
+.floatingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.floatingIcon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+
+/* Floating Animations */
+@keyframes moveRight { 0% { transform: translateX(0); } 100% { transform: translateX(200px); } }
+@keyframes moveLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-200px); } }
+@keyframes moveUp { 0% { transform: translateY(0); } 100% { transform: translateY(-200px); } }
+@keyframes moveDown { 0% { transform: translateY(0); } 100% { transform: translateY(200px); } }
+@keyframes moveDiagonal { 0% { transform: translate(0, 0); } 100% { transform: translate(150px, -150px); } }
+@keyframes moveDiagonalReverse { 0% { transform: translate(0, 0); } 100% { transform: translate(-150px, 150px); } }
+
+.floatingIcon.move-right { animation: moveRight 3s infinite alternate ease-in-out; }
+.floatingIcon.move-left { animation: moveLeft 3s infinite alternate ease-in-out; }
+.floatingIcon.move-up { animation: moveUp 3s infinite alternate ease-in-out; }
+.floatingIcon.move-down { animation: moveDown 3s infinite alternate ease-in-out; }
+.floatingIcon.move-diagonal { animation: moveDiagonal 3s infinite alternate ease-in-out; }
+.floatingIcon.move-diagonal-reverse { animation: moveDiagonalReverse 3s infinite alternate ease-in-out; }

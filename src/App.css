@@ -1,0 +1,74 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* UI Component Styles to work with animated background */
+
+/* Card styling for better visibility */
+/* UI Component Styles to work with animated background */
+
+/* Card styling for better visibility */
+.card, 
+.bg-gray-800, 
+.bg-gray-700,
+.bg-gray-900 {
+  background-color: rgba(31, 41, 55, 0.75) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove hard-coded backgrounds when not needed */
+.bg-gray-900.text-white.min-h-screen,
+.bg-blue-900.text-white.min-h-screen {
+  background-color: transparent !important;
+  backdrop-filter: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* Make chart elements more visible */
+.recharts-surface, 
+.recharts-layer {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+}

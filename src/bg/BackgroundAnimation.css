@@ -1,0 +1,111 @@
+/* Background Container */
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(135deg, #ddb93766, #e823c766, #cf247166, #8a18adaa, #18239b66);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease-in-out infinite alternate;
+    overflow: hidden;
+    pointer-events: none; /* Allows clicks to pass through to elements below */
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* Star Twinkle Effect */
+  .star-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite alternate ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 0.8; transform: scale(1.2); }
+    100% { opacity: 0; transform: scale(0.8); }
+  }
+  
+  /* Floating Instagram Icons */
+  .floating-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .floating-icon {
+    position: absolute;
+    opacity: 0.3;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Animation Keyframes */
+  @keyframes moveRight {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(150px) rotate(10deg); }
+  }
+  
+  @keyframes moveLeft {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(-150px) rotate(-10deg); }
+  }
+  
+  @keyframes moveUp {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-150px) rotate(10deg); }
+  }
+  
+  @keyframes moveDown {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(150px) rotate(-10deg); }
+  }
+  
+  @keyframes moveDiagonal {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(150px, -150px) rotate(15deg); }
+  }
+  
+  @keyframes moveDiagonalReverse {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(-150px, 150px) rotate(-15deg); }
+  }
+  
+  /* Apply Animations */
+  .move-right {
+    animation: moveRight 8s infinite alternate ease-in-out;
+  }
+  
+  .move-left {
+    animation: moveLeft 9s infinite alternate ease-in-out;
+  }
+  
+  .move-up {
+    animation: moveUp 10s infinite alternate ease-in-out;
+  }
+  
+  .move-down {
+    animation: moveDown 11s infinite alternate ease-in-out;
+  }
+  
+  .move-diagonal {
+    animation: moveDiagonal 12s infinite alternate ease-in-out;
+  }
+  
+  .move-diagonal-reverse {
+    animation: moveDiagonalReverse 13s infinite alternate ease-in-out;
+  }
