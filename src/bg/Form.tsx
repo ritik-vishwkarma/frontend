@@ -87,7 +87,7 @@ const InstagramAnalysisForm: React.FC = () => {
           headers: {
             'Content-Type': 'application/json',
           },
-          timeout: 90000,
+          timeout: 180000,
         }
       );
       
