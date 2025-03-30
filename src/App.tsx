@@ -5,7 +5,8 @@ import HashtagWordCloud from './components/plots/Hashtag.tsx'
 import TimeBasedInsights from './components/plots/TimeBasedPlots.tsx'
 import './App.css'
 import InstagramAnalysisForm from './bg/Form.tsx'
-// import PostPerformance from './Performance.tsx'
+import ModelPieChart from './components/plots/ModelPieChart.tsx'
+import TopPerformingPosts from './components/plots/ReachBasedPerformance.tsx'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
                 <EngagementOverTime />
                 <TimeBasedInsights />
                 <HashtagWordCloud />
-                {/* <PostPerformance /> */}
+                <ModelPieChart />
+                <TopPerformingPosts />
               </div>
             } 
           />

@@ -29,5 +29,5 @@
       ]
     }
   },
-  "include": ["src", "testing/TrySecond.tsx", "testing/try2.tsx", "testing/Try.tsx", "testing/TimeAnalysis.tsx", "testing/graphs.tsx", "testing/EngagementPieChart.tsx", "testing/Hashtag.tsx", "testing/LikesCommentsOverTime.tsx", "Demo.tsx", "testing/script.js"]
+  "include": ["src", "testing/TrySecond.tsx", "testing/try2.tsx", "testing/Try.tsx", "testing/TimeAnalysis.tsx", "testing/graphs.tsx", "testing/EngagementPieChart.tsx", "testing/Hashtag.tsx", "testing/LikesCommentsOverTime.tsx", "testing/script.js", "testing/LandingPage.tsx", "testing/Performance.tsx", "testing/Demo.tsx"]
 }

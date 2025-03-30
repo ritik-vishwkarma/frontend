@@ -45,12 +45,11 @@ const LikesCommentOverTime = () => {
         <div className="p-6 text-white min-h-screen">
             <div className="flex justify-center mb-10">
                 <div className="relative inline-block">
-                    <div className="relative px-8 py-4 bg-gray-800/40 backdrop-blur-md rounded-lg border border-white/10 shadow-2xl">
-                        <h1 className="text-3xl font-bold text-center text-white">
-                            Instagram Engagement Analysis
-                        </h1>
-                        <div className="absolute h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 bottom-0 left-1/2 transform -translate-x-1/2 rounded-t-lg"></div>
-                    </div>
+                    <h1 className="text-3xl font-bold text-center text-white relative z-10 px-10 py-3">
+                        Instagram Engagement Analysis
+                    </h1>
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 via-pink-500/30 to-blue-600/30 rounded-lg backdrop-blur-sm border border-white/10 shadow-xl transform -rotate-1 z-0"></div>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 via-purple-500/20 to-pink-500/20 rounded-lg backdrop-blur-sm border border-white/10 shadow-lg transform rotate-1 z-0"></div>
                 </div>
             </div>
 
